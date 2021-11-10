@@ -42,7 +42,7 @@ To create a RealWorld 2.0 site, copy schema.prisma into the db folder. This will
 
 RealWorld tables: User, Article, Content, Tag
 Blitz tables: Session, Token, Project
-Blitz survey tables: Question, Choice (please add these)
+Blitz survey tables: Question, Choice (please add these from the [Blitz tutorial](https://blitzjs.com/docs/tutorial))
 Neighborhood tables: Org, Event, Service, Item (to be added)
 
 
