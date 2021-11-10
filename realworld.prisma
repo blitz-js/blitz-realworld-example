@@ -11,17 +11,24 @@ generator client {
 }
 
 model User {
-  bio        String?
-  email      String    @unique
-  id         Int       @default(autoincrement()) @id
-  image      String?
-  password   String?
-  username   String?   @unique
-  articles   Article[] @relation("UserArticles")
-  favorites  Article[] @relation("UserFavorites", references: [id])
-  comments   Comment[] @relation("UserComments")
-  followedBy User[]    @relation("UserFollows", references: [id])
-  following  User[]    @relation("UserFollows", references: [id])
+  bio            String?
+  email          String    @unique
+  id             Int       @id @default(autoincrement())
+  image          String?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  name           String?
+  hashedPassword String?
+  username       String?   @unique
+  articles       Article[] @relation("UserArticles")
+  favorites      Article[] @relation("UserFavorites", references: [id])
+  comments       Comment[] @relation("UserComments")
+  followedBy     User[]    @relation("UserFollows", references: [id])
+  following      User[]    @relation("UserFollows", references: [id])
+  role           String    @default("USER")
+
+  //tokens   Token[]
+  //sessions Session[]
 }
 
 model Article {
@@ -53,11 +60,4 @@ model Comment {
 model Tag {
   id   Int    @default(autoincrement()) @id
   name String @unique
-}
-
-model Project {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  name      String
 }

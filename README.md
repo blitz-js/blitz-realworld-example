@@ -28,17 +28,21 @@ If delete your app folder, use a new terminal window when running `blitz new myA
 ##Add RealWorld model to your app
 
 To run only the simple RealWorld 1.0 schema, copy/rename realworld.prisma to db/schema.prisma.
-TypeError  Cannot read property 'findFirst' of undefined
 <!--
-  realworld.prisma originated from [NestJS+Prisma sample](https://github.com/lujakob/nestjs-realworld-example-app/blob/prisma/prisma/schema.prisma), with "mysql" changed to "sqlite".  Added project model, since added by Blitz otherwise.
+  realworld.prisma originated from [NestJS+Prisma sample](https://github.com/lujakob/nestjs-realworld-example-app/blob/prisma/prisma/schema.prisma), with "mysql" changed to "sqlite".  
+  Changed to hashedPassword and added name
 -->
 
-Use schema.prisma until error above resolved:
+**TypeError**  Cannot read property 'findFirst' of undefined
+Use schema.prisma below until error above resolved:
+
+**The following works**
 
 To create a RealWorld 2.0 site, copy schema.prisma into the db folder. This will provide:
 
 RealWorld tables: User, Article, Content, Tag
-Blitz tables: Session, Token, Project, Question, Choice
+Blitz tables: Session, Token, Project
+Blitz survey tables: Question, Choice
 Neighborhood tables: Org, Event, Service, Item (to be added)
 
 
@@ -51,3 +55,21 @@ Enter a name for the new migration, then restart the server
 `blitz dev`
 
 Then go to [http://localhost:3000/projects](http://localhost:3000/projects)
+
+
+<!--
+  model User {
+  bio        String?
+  email      String    @unique
+  id         Int       @default(autoincrement()) @id
+  image      String?
+  name       String?
+  hashedPassword String?
+  username   String?   @unique
+  articles   Article[] @relation("UserArticles")
+  favorites  Article[] @relation("UserFavorites", references: [id])
+  comments   Comment[] @relation("UserComments")
+  followedBy User[]    @relation("UserFollows", references: [id])
+  following  User[]    @relation("UserFollows", references: [id])
+}
+-->
