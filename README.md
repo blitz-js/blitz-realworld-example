@@ -56,20 +56,6 @@ Enter a name for the new migration, then restart the server
 
 Then go to [http://localhost:3000/projects](http://localhost:3000/projects)
 
+---
 
-<!--
-  model User {
-  bio        String?
-  email      String    @unique
-  id         Int       @default(autoincrement()) @id
-  image      String?
-  name       String?
-  hashedPassword String?
-  username   String?   @unique
-  articles   Article[] @relation("UserArticles")
-  favorites  Article[] @relation("UserFavorites", references: [id])
-  comments   Comment[] @relation("UserComments")
-  followedBy User[]    @relation("UserFollows", references: [id])
-  following  User[]    @relation("UserFollows", references: [id])
-}
--->
+[GitHub](https://github.com/blitz-js/blitz-realworld-example)
