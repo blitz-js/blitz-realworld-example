@@ -56,6 +56,11 @@ Enter a name for the new migration, then restart the server
 
 Then go to [http://localhost:3000/projects](http://localhost:3000/projects)
 
+##Pages: Article, Editor, Profile, User
+The "pages" folder originates from the [NextJS Realworld demo](https://github.com/cirosantilli/node-express-sequelize-nextjs-realworld-example-app/tree/next/pages). We need a process for moving it into the existing pages folder within [myAppName].
+
+
+
 ---
 
 [GitHub](https://github.com/blitz-js/blitz-realworld-example)
