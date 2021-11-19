@@ -10,33 +10,36 @@ You need Node.js 12 or newer. You can verify this by running `node -v` in your t
 
 ## Install Blitz
 
-Run `yarn global add blitz`
+Run `yarn global add blitz`  
+You'll only need to run the above the first time you install blitz.
 
 ## Create a New App
 
 Choose defaults: Typescript, Full, Yarn, React Final Form...
 
-`blitz new myAppName`
-`cd myAppName`
+`blitz new myAppName`  
+`cd myAppName`  
 `blitz dev`  
 
 View your brand new app at [http://localhost:3000](http://localhost:3000)
 
-If delete your app folder, use a new terminal window when running `blitz new myAppName` to avoid conflicts in your virutal .env
+If you delete your app folder, use a new terminal window when running `blitz new myAppName` to avoid conflicts in your virutal .env
 
 
 ## Add RealWorld model to your app
 
-To run only the simple RealWorld 1.0 schema, copy/rename realworld.prisma to db/schema.prisma.
+**1. Minimum Tables (to be similar to other RealWorld samples) - currently broken**  
+
+To run only the simple RealWorld 1.0 schema, copy and rename realworld.prisma to db/schema.prisma.
 <!--
   realworld.prisma originated from [NestJS+Prisma sample](https://github.com/lujakob/nestjs-realworld-example-app/blob/prisma/prisma/schema.prisma), with "mysql" changed to "sqlite".  
   Changed to hashedPassword and added name
 -->
 
-**TypeError**  Cannot read property 'findFirst' of undefined
-Use schema.prisma below until error above resolved:
+**TypeError**  Cannot read property 'findFirst' of undefined  
+Use schema.prisma below until error above resolved.
 
-**The following works**
+**2. All the Tables - the following works**
 
 To create a RealWorld 2.0 site, copy schema.prisma into the db folder. This will provide:
 
