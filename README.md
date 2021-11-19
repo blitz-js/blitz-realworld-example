@@ -1,8 +1,8 @@
 # Blitz RealWorld
 
-[React](https://reactjs.org) + [NextJS](https://nextjs.org) + [Prisma](https://www.prisma.io)
+[React](https://reactjs.org) + [NextJS](https://nextjs.org) + [Prisma](https://www.prisma.io)  
 
-A FullStack [RealWorld Starter App](https://codebase.show/projects/realworld?category=fullstack)
+A FullStack [RealWorld 1.0 Starter App](https://codebase.show/projects/realworld?category=fullstack) - Upcoming: [RealWorld 2.0 Planning Fork](https://neighborhood.org/planning/)
 
 ## Set Up Your Computer
 
