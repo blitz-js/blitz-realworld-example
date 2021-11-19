@@ -1,18 +1,18 @@
-#Blitz RealWorld
+# Blitz RealWorld
 
 [React](https://reactjs.org) + [NextJS](https://nextjs.org) + [Prisma](https://www.prisma.io)
 
 A FullStack [RealWorld Starter App](https://codebase.show/projects/realworld?category=fullstack)
 
-##Set Up Your Computer
+## Set Up Your Computer
 
 You need Node.js 12 or newer. You can verify this by running `node -v` in your terminal. If you don't have Node or need a newer version, we recommend using a node version manager like [fnm](https://github.com/Schniz/fnm) so you can change node versions for each project.
 
-##Install Blitz
+## Install Blitz
 
 Run `yarn global add blitz`
 
-##Create a New App
+## Create a New App
 
 Choose defaults: Typescript, Full, Yarn, React Final Form...
 
@@ -25,7 +25,7 @@ View your brand new app at [http://localhost:3000](http://localhost:3000)
 If delete your app folder, use a new terminal window when running `blitz new myAppName` to avoid conflicts in your virutal .env
 
 
-##Add RealWorld model to your app
+## Add RealWorld model to your app
 
 To run only the simple RealWorld 1.0 schema, copy/rename realworld.prisma to db/schema.prisma.
 <!--
@@ -56,7 +56,7 @@ Enter a name for the new migration, then restart the server
 
 Then go to [http://localhost:3000/projects](http://localhost:3000/projects)
 
-##Pages: Article, Editor, Profile, User
+## Pages: Article, Editor, Profile, User
 The "pages" folder originates from the [NextJS Realworld demo](https://github.com/cirosantilli/node-express-sequelize-nextjs-realworld-example-app/tree/next/pages). We need a process for moving it into the existing pages folder within [myAppName].
 
 
