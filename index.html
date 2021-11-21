@@ -19,11 +19,24 @@
 <script>
 if(typeof param=='undefined'){ var param={}; }
 param.headerLogo = "<a href='https://blitzjs.com'><img src='img/logo/blitz.png' style='width:90px;padding-top:4px'></a>";
+document.addEventListener('hashChangeEvent', function (elem) {
+  loadPageMarkdown();                    
+}, false);
+$(document).ready(function () {
+  loadPageMarkdown()
+});
+function loadPageMarkdown() {
 
- $(document).ready(function () {
-    loadMarkdown("README.md", "readmeDiv", "_parent");
-    //loadMarkdown("side.md", "sideDiv", "_parent");
-  });
+ let hash = getHash(); // Includes hiddenhash
+ $("#readmeDiv").html("");
+ // Load a markdown page relative to current directory
+ if (hash.display) { // To do: walk an array of hash.display values. Move into a function within localsite.js
+   loadMarkdown(hash.display, "readmeDiv", "_parent");
+ } else {
+   loadMarkdown("README.md", "readmeDiv", "_parent");
+   //loadMarkdown("side.md", "sideDiv", "_parent");
+ }
+}
 </script>
 
 </head>

@@ -2,7 +2,9 @@
 
 [React](https://reactjs.org) + [NextJS](https://nextjs.org) + [Prisma](https://www.prisma.io)  
 
-A FullStack [RealWorld 1.0 Starter App](https://codebase.show/projects/realworld?category=fullstack) - View our [RealWorld 2.0 Planning Fork](https://neighborhood.org/planning/#display=planning.md) as webpage.
+A FullStack [RealWorld 1.0 Starter App](https://codebase.show/projects/realworld?category=fullstack)
+
+View our [RealWorld 2.0 Setup Steps](#display=planning.md)
 
 ## Set Up Your Computer
 
@@ -43,10 +45,19 @@ Use schema.prisma below until error above resolved.
 
 To create a RealWorld 2.0 site, copy schema.prisma into the db folder. This will provide:
 
-RealWorld tables: User, Article, Content, Tag
-Blitz tables: Session, Token, Project
-Blitz survey tables: Question, Choice (please add these from the [Blitz tutorial](https://blitzjs.com/docs/tutorial))
-Neighborhood tables: Org, Event, Service, Item (to be added)
+RealWorld tables: 
+**User, Article, Content, Tag**
+
+Blitz tables:
+**Session, Token, Project**
+
+Additional tables to add:
+
+Blitz survey tables (from the [Blitz tutorial](https://blitzjs.com/docs/tutorial)): 
+**Question, Choice**
+
+Civic Tech tables (to be determined): 
+**Org, Place, Event, Service, Item**
 
 
 Generate the model by running:
@@ -66,4 +77,4 @@ The "pages" folder originates from the [NextJS Realworld demo](https://github.co
 
 ---
 
-[GitHub](https://github.com/blitz-js/blitz-realworld-example)
+[GitHub](https://github.com/blitz-js/blitz-realworld-example) - [RealWorld 2.0](#display=planning.md)
