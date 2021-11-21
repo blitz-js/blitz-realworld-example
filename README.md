@@ -45,19 +45,19 @@ Use schema.prisma below until error above resolved.
 
 To create a RealWorld 2.0 site, copy schema.prisma into the db folder. This will provide:
 
-RealWorld tables: 
-**User, Article, Content, Tag**
+**RealWorld tables:**  
+User, Article, Content, Tag
 
-Blitz tables:
-**Session, Token, Project**
+**Blitz tables:**  
+Session, Token, Project
 
 Additional tables to add:
 
-Blitz survey tables (from the [Blitz tutorial](https://blitzjs.com/docs/tutorial)): 
-**Question, Choice**
+**Blitz survey tables** (from the [Blitz tutorial](https://blitzjs.com/docs/tutorial)): 
+Question, Choice
 
-Civic Tech tables (to be determined): 
-**Org, Place, Event, Service, Item**
+**Civic Tech tables** (to be determined)
+Org, Place, Event, Service, Item
 
 
 Generate the model by running:
