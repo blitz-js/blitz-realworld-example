@@ -4,8 +4,6 @@
 
 A FullStack [RealWorld 1.0 Starter App](https://codebase.show/projects/realworld?category=fullstack)
 
-View our [RealWorld 2.0 Setup Steps](#display=planning.md)
-
 ## Set Up Your Computer
 
 You need Node.js 12 or newer. You can verify this by running `node -v` in your terminal. If you don't have Node or need a newer version, we recommend using a node version manager like [fnm](https://github.com/Schniz/fnm) so you can change node versions for each project.
@@ -21,6 +19,11 @@ Choose defaults: Typescript, Full, Yarn, React Final Form...
 
 `blitz new myAppName`  
 `cd myAppName`  
+
+Install Tailwind CSS (Learn more about [Blitz recipes](https://blitzjs.com/docs/using-recipes))
+
+`blitz install tailwind`
+
 `blitz dev`  
 
 View your brand new app at [http://localhost:3000](http://localhost:3000)
@@ -77,4 +80,4 @@ The "pages" folder originates from the [NextJS Realworld demo](https://github.co
 
 ---
 
-[GitHub](https://github.com/blitz-js/blitz-realworld-example) - [RealWorld 2.0](#display=planning.md)
+[GitHub](https://github.com/blitz-js/blitz-realworld-example) - [RealWorld 2.0](https://neighborhood.org/planning/#display=planning.md)
